@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Global Cause of Death</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 50px;
+      color: #FF0077;
+      text-decoration: none;
+      z-index: 999;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .title-section {
+      max-width: 900px;
+      margin: 80px auto 40px;
+      padding: 0 20px;
+    }
+
+    .title-section h1 {
+      text-align: left;
+      font-size: 50px;
+      color: black;
+      margin: 0;
+    }
+
+    .title-section hr {
+      width: 100%;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+    }
+
+    .info-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .info-label {
+      width: 140px;
+      font-weight: bold;
+      padding-top: 6px;
+      color: #444;
+    }
+
+    .info-values {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .info-button {
+      background-color: #FF0077;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: default;
+      transition: background-color 0.3s;
+    }
+
+    .info-button:hover {
+      background-color: #e6006b;
+    }
+
+    .link-button {
+      background-color: #FF0077;
+      color: white;
+      padding: 10px 24px;
+      border: none;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      display: inline-block;
+    }
+
+    .media-section {
+      max-width: 1000px;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+    }
+
+    img {
+      display: block;
+      margin: 30px auto;
+      max-width: 100%;
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-section {
+      max-width: 900px;
+      margin: 0 auto 60px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+      color: #222;
+    }
+
+    h2 {
+      color: #111;
+      margin-top: 40px;
+      font-size: 24px;
+    }
+
+    ul {
+      margin-left: 20px;
+      list-style-type: disc;
+    }
+
+    .contact-section {
+      text-align: left;
+      border-top: 1px solid #ccc;
+      padding: 40px 40px 60px;
+      background-color: #f9f9f9;
+    }
+
+    .contact-section h2 {
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    .contact-section hr {
+      width: 60px;
+      border: 2px solid #FF0077;
+      margin: 20px 0;
+    }
+
+    .contact-section p {
+      font-size: 18px;
+      background-color: #003366;
+      color: white;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+    }
+
+    .contact-info div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .contact-info i {
+      color: #FF0077;
+      font-size: 20px;
+      width: 30px;
+    }
+
+    .contact-info a,
+    .contact-info span {
+      font-size: 16px;
+      color: #003366;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .title-section h1 {
+        font-size: 36px;
+      }
+      .info-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .info-label {
+        width: auto;
+        margin-bottom: 5px;
+      }
+      img {
+        width: 95%;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<a href="index.html#portfolio" class="back-button" title="Back">←</a>
+
+<div class="title-section">
+  <h1>Global Cause of Death Analysis</h1>
+  <hr>
+</div>
+
+<div class="content-section">
+  <div class="info-row">
+    <div class="info-label">Tools Used :</div>
+    <div class="info-values">
+      <button class="info-button">Excel</button>
+      <button class="info-button">Power BI</button>
+    </div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-label">Relevant Link :</div>
+    <div class="info-values">
+      <a href="https://github.com/rimshasiddiqui68/Cause-of-Death-Dashboard" target="_blank" class="link-button">Detailed Repository ➔</a>
+    </div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-label">Project Type :</div>
+    <div class="info-values">
+      <button class="info-button">Data Cleaning</button>
+      <button class="info-button">Exploratory Data Analysis</button>
+      <button class="info-button">Data Visualisation</button>
+    </div>
+  </div>
+</div>
+
+<div class="content-section">
+  <h2>Project Background</h2>
+  <p>
+    Understanding mortality is about more than numbers—each data point represents a human life and a story. 
+    Analyzing causes of death can be emotionally weighty, yet it plays a critical role in informing global 
+    health policies, allocating healthcare resources, and addressing preventable health crises. Mortality data 
+    serves as a mirror reflecting the medical, social, and economic conditions of societies across time and place.
+  </p>
+  
+  <p>
+    For this project, I worked with a comprehensive dataset from the 
+    <a href="https://ourworldindata.org/" target="_blank">Our World in Data</a> platform, which spans 
+    202 countries from 1990 to 2019. The dataset includes detailed records of deaths categorized by 
+    31 different causes, such as heart disease, cancer, respiratory infections, neonatal disorders, and 
+    interpersonal violence. This 30-year longitudinal dataset offers rich opportunities to uncover trends, 
+    regional disparities, and shifts in global health priorities.
+  </p>
+  
+  <h2>Executive Summary</h2>
+
+  <p>
+    <strong>The aim of this project</strong> was to clean, organize, and visualize this extensive mortality dataset in a meaningful way. 
+    Using Power BI, I created an interactive dashboard that enables users to identify the most lethal diseases, observe how death patterns have evolved over the years, 
+    and compare regional health outcomes—ultimately supporting better data-driven decisions in public health.
+  </p>
+
+<p>
+  This analysis focuses on global mortality trends across 202 countries from 1990 to 2019, highlighting shifts in causes of death and their geographic distribution. 
+  From 54 million total deaths globally, non-communicable diseases (NCDs) accounted for 74%, with cardiovascular diseases and cancers being the top culprits. 
+  Notably, deaths in China and India saw significant increases, while neonatal disorders and infectious diseases have declined over time. 
+  Additionally, countries with large populations and regions like Europe and Africa face the highest mortality rates, emphasizing the importance of tailored health interventions.
+</p>
+
+
+
+<h2>Key Insights</h2>
+<ul>
+  <li><strong>Leading Causes of Mortality:</strong> Cardiovascular diseases and neoplastic diseases (cancers) have remained the top causes of death globally over the years.</li>
+
+  <li><strong>Changes in Mortality Trends by Country:</strong> 
+    <ul>
+      <li>In China, deaths from cardiovascular diseases and neoplasms nearly doubled, rising from 2.4 million in 1990 to 4.6 million in 2019.</li>
+      <li>In India, the death toll increased from 1.2 million in 1990 to 2.6 million in 2019.</li>
+      <li>The increase has been slower in countries like Russia and the United States, though chronic disease deaths continue to rise steadily.</li>
+    </ul>
+  </li>
+
+  <li><strong>Growth in Cancer Mortality:</strong> 
+    <ul>
+      <li>In China, cancer-related deaths grew from 1.5 million in 1990 to 2.7 million in 2019.</li>
+      <li>In the United States, cancer deaths increased from 0.5 million to 0.77 million over the same period.</li>
+    </ul>
+  </li>
+
+  <li><strong>Declining Role of Neonatal Disorders:</strong> Neonatal disorders, once among the top causes of death, have significantly declined in prominence globally.</li>
+
+  <li><strong>Top Countries by Total Deaths:</strong> 
+    <ul>
+      <li>China: 265 million deaths (average of 8.8 million/year).</li>
+      <li>India: 238 million deaths (average of 7.94 million/year).</li>
+      <li>Followed by the United States and Russia.</li>
+    </ul>
+  </li>
+
+  <li><strong>Global Death Trends:</strong> Global deaths increased from 43 million in 1990 to 54 million in 2019, showing a steady rise in mortality worldwide.</li>
+
+  <li><strong>Cause Breakdown:</strong> 
+    <ul>
+      <li>Non-communicable diseases (NCDs): 74% of all deaths.</li>
+      <li>Communicable diseases: 14%.</li>
+      <li>Violent deaths: 1.3% from suicide, <1% from interpersonal violence.</li>
+    </ul>
+  </li>
+
+  <li><strong>Top 5 Non-communicable Diseases Responsible for Mortality:</strong> 
+    <ul>
+      <li>Cardiovascular diseases: 448 million deaths.</li>
+      <li>Neoplasms (Cancers): 230 million deaths.</li>
+      <li>Chronic respiratory diseases: 105 million deaths.</li>
+      <li>Cirrhosis: 37 million deaths.</li>
+      <li>Diabetes mellitus: 31 million deaths.</li>
+    </ul>
+  </li>
+
+  <li><strong>Continents with the Highest Total Deaths:</strong> 
+    <ul>
+      <li>Europe: 574 million deaths.</li>
+      <li>Africa: 540 million deaths.</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- Video Section -->
+<div class="media-section">
+  <video width="800" height="450" controls>
+    <source src="images/Video/Part 1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <br><br>
+  <video width="800" height="450" controls>
+    <source src="images/Video/part 2 - Made with Clipchamp.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
+
+<div class="media-section">
+  <img src="images/portfolio/Cause of death 1 page.png" alt="Cause of Death - Page 1" width="800">
+  <br><br>
+  <img src="images/portfolio/Cause of death 2 page.png" alt="Cause of Death - Page 2" width="800">
+</div>
+
+
+<div class="content-section">
+  <h2>Conclusion</h2>
+  <p>
+    This analysis highlights a global shift toward non-communicable diseases (NCDs) as the primary causes of death, especially in densely populated countries like China and India. 
+    While deaths from neonatal and communicable diseases have declined, chronic illnesses such as cardiovascular disease, cancer, and diabetes are rising steadily. 
+    The data emphasizes the urgent need for preventive healthcare, better chronic disease management, and stronger healthcare systems to address growing health disparities 
+    and reduce avoidable mortality worldwide.
+  </p>
+</div>
+
+
+<div class="content-section">
+  <h2>Recommendations</h2>
+  <ul>
+    <li><strong>Focus on Prevention:</strong> Encourage early detection and healthier lifestyles to reduce deaths from chronic diseases like heart disease, diabetes, and cancer.</li>
+    <li><strong>Raise Awareness:</strong> Launch public campaigns targeting risk factors such as smoking, poor diet, and physical inactivity.</li>
+    <li><strong>Strengthen Healthcare Access:</strong> Improve infrastructure and make healthcare more affordable, especially in low- and middle-income countries.</li>
+    <li><strong>Support High-Risk Groups:</strong> Prioritize care for vulnerable populations, including the elderly and uninsured.</li>
+    <li><strong>Encourage Global Collaboration:</strong> Share best practices and resources across countries to tackle common health challenges more effectively.</li>
+  </ul>
+
+  <p>
+    By working together and sharing knowledge, countries can save more lives and make healthcare more fair for everyone
+    dont me 
+    </p>
+</div>
+
+
+
+
+<div class="contact-section">
+  <h2>GET IN TOUCH</h2>
+  <hr>
+  <p>Let's chat! Your data, my brain – together we can be unstoppable.</p>
+
+  <div class="contact-info">
+    <div>
+      <i class="fa-solid fa-house"></i>
+      <span>India (Open for Relocation)</span>
+    </div>
+    <div>
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:rimshasiddique68@gmail.com">rimshasiddique68@gmail.com</a>
+    </div>
+    <div>
+      <i class="fa-brands fa-github"></i>
+      <a href="https://github.com/rimshasiddiqui68" target="_blank">github.com/rimshasiddiqui68</a>
+    </div>
+    <div>
+      <i class="fa-brands fa-linkedin"></i>
+      <a href="https://linkedin.com/in/rimsha-siddiqui-501618268/" target="_blank">linkedin.com/in/rimsha-siddiqui-501618268/</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+    

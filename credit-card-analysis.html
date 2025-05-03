@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Churn Analysis</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 50px;
+      color: #FF0077;
+      text-decoration: none;
+      z-index: 999;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .title-section {
+      max-width: 900px;
+      margin: 80px auto 40px;
+      padding: 0 20px;
+    }
+
+    .title-section h1 {
+      text-align: left;
+      font-size: 50px;
+      color: black;
+      margin: 0;
+    }
+
+    .title-section hr {
+      width: 100%;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+    }
+
+    .info-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .info-label {
+      width: 140px;
+      font-weight: bold;
+      padding-top: 6px;
+      color: #444;
+    }
+
+    .info-values {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .info-button {
+      background-color: #FF0077;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: default;
+      transition: background-color 0.3s;
+    }
+
+    .info-button:hover {
+      background-color: #e6006b;
+    }
+
+    .link-button {
+      background-color: #FF0077;
+      color: white;
+      padding: 10px 24px;
+      border: none;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      display: inline-block;
+    }
+
+    .media-section {
+      max-width: 1000px;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+    }
+
+    img {
+      display: block;
+      margin: 30px auto;
+      max-width: 100%;
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-section {
+      max-width: 900px;
+      margin: 0 auto 60px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+      color: #222;
+    }
+
+    h2 {
+      color: #111;
+      margin-top: 40px;
+      font-size: 24px;
+    }
+
+    ul {
+      margin-left: 20px;
+      list-style-type: disc;
+    }
+
+    .contact-section {
+      text-align: left;
+      border-top: 1px solid #ccc;
+      padding: 40px 40px 60px;
+      background-color: #f9f9f9;
+    }
+
+    .contact-section h2 {
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    .contact-section hr {
+      width: 60px;
+      border: 2px solid #FF0077;
+      margin: 20px 0;
+    }
+
+    .contact-section p {
+      font-size: 18px;
+      background-color: #003366;
+      color: white;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+    }
+
+    .contact-info div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .contact-info i {
+      color: #FF0077;
+      font-size: 20px;
+      width: 30px;
+    }
+
+    .contact-info a,
+    .contact-info span {
+      font-size: 16px;
+      color: #003366;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .title-section h1 {
+        font-size: 36px;
+      }
+      .info-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .info-label {
+        width: auto;
+        margin-bottom: 5px;
+      }
+      img {
+        width: 95%;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<a href="index.html#portfolio" class="back-button" title="Back">←</a>
+
+<div class="title-section">
+  <h1>Credit Card Spending Analysis</h1>
+  <hr>
+</div>
+
+<div class="content-section">
+  <div class="info-row">
+    <div class="info-label">Tools Used :</div>
+    <div class="info-values">
+      <button class="info-button">Excel</button>
+      <button class="info-button">Power BI</button>
+    </div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-label">Relevant Link :</div>
+    <div class="info-values">
+      <a href="https://github.com/rimshasiddiqui68/Credit-Card-Spending-Analysis" target="_blank" class="link-button">Detailed Repository ➔</a>
+    </div>
+  </div>
+  
+
+  <div class="info-row">
+    <div class="info-label">Project Type :</div>
+    <div class="info-values">
+      <button class="info-button">Data Cleaning</button>
+      <button class="info-button">Exploratory Data Analysis</button>
+      <button class="info-button">Data Visualisation</button>
+    </div>
+  </div>
+</div>
+
+<div class="content-section">
+    <h2>Project Background</h2>
+    <p>In today’s fast-paced world, credit card usage has become an integral part of consumers’ financial behavior. Understanding how people spend their money can provide businesses with crucial insights into customer preferences, helping them optimize their offerings and create tailored marketing strategies. This project focuses on analyzing a dataset of credit card transactions across India, aiming to uncover patterns in consumer spending habits.</p>
+    
+    <p>By analyzing data on transaction amounts, card types, spending categories, gender, and geographical locations, the goal was to gain a better understanding of how individuals use credit cards for daily expenses. The dataset provides valuable information on the most common spending categories, peak spending periods, and regional differences in credit card usage. Additionally, it explores how spending varies between genders and card types, offering businesses the opportunity to create more personalized and targeted marketing campaigns.</p>
+    
+    <h2>Research Focus</h2>
+<ul>
+  <li>What are the most commonly used credit card types, and how do preferences differ by gender?</li>
+  <li>Which spending categories see the highest transaction counts and amounts?</li>
+  <li>How do months and weekly patterns influence credit card usage?</li>
+  <li>Which cities record the highest credit card usage, and what are the spending habits by gender in these cities?</li>
+  <li>Do females or males spend more overall, and what categories contribute most to their spending?</li>
+  <li>How do weekday and weekend spending patterns differ in terms of categories and amounts?</li>
+  <li>What is the relationship between card type and expense type (e.g., Fuel, Food)?</li>
+  <li>Which months and categories see peak spending for each gender?</li>
+</ul>
+
+
+  <h2>Key Insights</h2>
+  <h2>Key Insights</h2>
+  <ul>
+    <li><strong>Gender-Based Spending Behavior:</strong> Females tend to spend more overall on credit cards compared to males. They mostly prefer Silver cards for their transactions, while males are inclined toward using Platinum cards, especially for high-value purchases.</li>
+  
+    <li><strong>Top Spending Categories:</strong> The most common areas of spending are Bills and Food. Males are the highest spenders on Fuel, particularly during January, while females show a strong preference for paying Bills, with October being their peak month for such expenses.</li>
+  
+    <li><strong>Spending Peaks by Time:</strong> Credit card usage reaches its highest during December and January, likely due to holiday shopping and New Year-related expenditures. These seasonal spikes reveal how consumer behavior changes around festive periods.</li>
+  
+    <li><strong>Weekly Spending Patterns:</strong> Sundays experience the highest number of transactions, showing increased shopping activity during weekends. However, the highest amounts are spent during weekdays, particularly on categories like Food and Entertainment.</li>
+  
+    <li><strong>City-Level Spending Insights:</strong> Cities such as Bengaluru, Greater Mumbai, and Ahmedabad have the highest levels of credit card usage. In Greater Mumbai, females spend significantly on Bills, whereas in Ahmedabad, males focus more on Fuel-related expenses, highlighting regional preferences.</li>
+  
+    <li><strong>Gender and Monthly Trends:</strong> Spending habits vary by gender and time of year. Females tend to spend the most in October, while males take the lead in January, especially for categories like Fuel. These variations indicate the importance of timing in targeting marketing efforts.</li>
+  
+    <li><strong>Business Implications:</strong> These insights offer a clear view of consumer behavior, helping businesses tailor their services, promotions, and outreach strategies based on gender, region, and time-specific trends. Personalized offers and targeted marketing can significantly improve engagement and customer satisfaction.</li>
+  </ul>
+  
+
+
+<div class="media-section">
+  <img src="images\portfolio\Credit Card Page 1.png" alt="Customer Churn Dashboard">
+  <img src="images\portfolio\Credit card Page 2.png" alt="Churn Breakdown Visualization">
+  <img src="images\portfolio\Credit Card Page 3.png" alt="Churn Breakdown Visualization">
+</div>
+
+
+<div class="content-section">
+    <h2>Conclusion</h2>
+
+    <p>
+        This project gives a clear picture of how people across India use their credit cards—from what they buy to when and where they spend the most. We saw that spending habits change with seasons, cities, and even between men and women. Bills and food take up a big chunk of expenses, and holidays bring a big jump in card swipes. These insights can really help businesses connect better with their customers by offering the right deals at the right time. In the end, it’s all about understanding people’s everyday choices and using that knowledge to build smarter, more personalized experiences.
+    </p>
+    
+    <h2>Recommendations</h2>
+    <ul>
+      <li>
+        <strong>Personalized Rewards Based on User Behavior:</strong> 
+        Tailored rewards and offers based on individual user behavior can drive customer satisfaction and increase spending. By analyzing users' spending patterns, companies can offer personalized discounts, cashbacks, or special promotions that are relevant to each user. This could encourage users to use their credit cards more frequently.<br>
+        <em>Benefits:</em><br>
+        Improves customer retention by offering personalized incentives.<br>
+        Drives repeat purchases and increases spending frequency.<br>
+        Enhances the overall user experience, making customers feel understood and valued.
+      </li>
+    
+      <li>
+        <strong>Launch City-Specific Campaigns:</strong> 
+        Targeting campaigns based on regional spending trends can significantly boost engagement. Offering specific promotions in high-spending cities or areas with unique cultural or seasonal spending patterns will make offers more relevant to customers in those locations.<br>
+        <em>Benefits:</em><br>
+        Increases engagement by tailoring offers to local needs.<br>
+        Drives higher conversion rates in targeted regions.<br>
+        Improves customer satisfaction by offering products and services suited to their preferences.
+      </li>
+    
+      <li>
+        <strong>Seasonal Incentives for Off-Peak Months:</strong> 
+        To reduce transaction congestion during peak months and spread out the transaction load, companies can offer incentives during traditionally quieter months (like June or July). This can include special promotions, discounts, or limited-time rewards for completing transactions in off-peak periods.<br>
+        <em>Benefits:</em><br>
+        Balances transaction volume throughout the year, reducing system load during peak months.<br>
+        Increases overall revenue by incentivizing users to spend during off-peak times.<br>
+        Enhances customer engagement by offering timely, seasonally relevant rewards.
+      </li>
+    
+      <li>
+        <strong>Intelligent Spend Insights & Nudges:</strong> 
+        Providing users with detailed spending insights, along with gentle nudges to make smarter financial decisions, can help them better manage their credit card usage. Offering notifications on how they’re spending, along with tips for optimizing their expenses, can promote responsible financial habits.<br>
+        <em>Benefits:</em><br>
+        Builds trust with users by helping them manage their finances more effectively.<br>
+        Encourages users to use their credit cards in a more thoughtful manner.<br>
+        Increases user engagement with regular, personalized financial insights.
+      </li>
+    
+      <li>
+        <strong>Gamified Loyalty Programs:</strong> 
+        Gamifying the loyalty program can make the use of credit cards more engaging and fun. By adding elements like achievement levels, points, and badges for reaching specific spending milestones, users are encouraged to interact more frequently with their cards.<br>
+        <em>Benefits:</em><br>
+        Boosts card usage by making it fun and rewarding for users.<br>
+        Drives increased engagement, especially from younger customers.<br>
+        Promotes consistent spending by offering rewards for completing specific goals.
+      </li>
+    
+      <li>
+        <strong>Automated Bill Pay Incentives:</strong> 
+        Encouraging users to set up automatic bill payments via credit cards can guarantee recurring transactions. Offering small incentives or rewards for users who enroll in automatic bill payment can help ensure regular usage of the credit card.<br>
+        <em>Benefits:</em><br>
+        Increases transaction frequency by locking in regular payments.<br>
+        Reduces the risk of late payments, improving user financial stability.<br>
+        Ensures consistent engagement with the platform, making users more likely to use their cards for additional purchases.
+      </li>
+    
+      <li>
+        <strong>Proactive Personal Finance Dashboards:</strong> 
+        Providing users with a personal finance dashboard that tracks their spending habits, savings, and offers insights can significantly improve customer experience. It can help customers stay informed, make smarter financial decisions, and feel more in control of their money. Sending proactive nudges or savings tips based on user behavior can further boost engagement and build trust.
+      </li>
+    </ul>
+    
+
+    
+
+<div class="contact-section">
+  <h2>GET IN TOUCH</h2>
+  <hr>
+  <p>Let's chat! Your data, my brain – together we can be unstoppable.</p>
+
+  <div class="contact-info">
+    <div>
+      <i class="fa-solid fa-house"></i>
+      <span>India (Open for Relocation)</span>
+    </div>
+    <div>
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:rimshasiddique68@gmail.com">rimshasiddique68@gmail.com</a>
+    </div>
+    <div>
+      <i class="fa-brands fa-github"></i>
+      <a href="https://github.com/rimshasiddiqui68" target="_blank">github.com/rimshasiddiqui68</a>
+    </div>
+    <div>
+      <i class="fa-brands fa-linkedin"></i>
+      <a href="https://linkedin.com/in/rimsha-siddiqui-501618268/" target="_blank">linkedin.com/in/rimsha-siddiqui-501618268/</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

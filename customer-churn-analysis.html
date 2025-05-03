@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My New Page Title</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 50px;
+      color: #FF0077;
+      text-decoration: none;
+      z-index: 999;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .title-section {
+      max-width: 900px;
+      margin: 80px auto 40px;
+      padding: 0 20px;
+    }
+
+    .title-section h1 {
+      text-align: left;
+      font-size: 50px;
+      color: black;
+      margin: 0;
+    }
+
+    .title-section hr {
+      width: 100%;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+    }
+
+    .info-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .info-label {
+      width: 140px;
+      font-weight: bold;
+      padding-top: 6px;
+      color: #444;
+    }
+
+    .info-values {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .info-button {
+      background-color: #FF0077;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: default;
+      transition: background-color 0.3s;
+    }
+
+    .info-button:hover {
+      background-color: #e6006b;
+    }
+
+    .link-button {
+      background-color: #FF0077;
+      color: white;
+      padding: 10px 24px;
+      border: none;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      display: inline-block;
+    }
+
+    .media-section {
+      max-width: 1000px;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+    }
+
+    img {
+      display: block;
+      margin: 30px auto;
+      max-width: 100%;
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-section {
+      max-width: 900px;
+      margin: 0 auto 60px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+      color: #222;
+    }
+
+    h2 {
+      color: #111;
+      margin-top: 40px;
+      font-size: 24px;
+    }
+
+    ul {
+      margin-left: 20px;
+      list-style-type: disc;
+    }
+
+    .contact-section {
+      text-align: left;
+      border-top: 1px solid #ccc;
+      padding: 40px 40px 60px;
+      background-color: #f9f9f9;
+    }
+
+    .contact-section h2 {
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    .contact-section hr {
+      width: 60px;
+      border: 2px solid #FF0077;
+      margin: 20px 0;
+    }
+
+    .contact-section p {
+      font-size: 18px;
+      background-color: #003366;
+      color: white;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+    }
+
+    .contact-info div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .contact-info i {
+      color: #FF0077;
+      font-size: 20px;
+      width: 30px;
+    }
+
+    .contact-info a,
+    .contact-info span {
+      font-size: 16px;
+      color: #003366;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .title-section h1 {
+        font-size: 36px;
+      }
+      .info-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .info-label {
+        width: auto;
+        margin-bottom: 5px;
+      }
+      img {
+        width: 95%;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<a href="index.html#portfolio" class="back-button" title="Back">←</a>
+
+<div class="title-section">
+  <h1>Customer Churn Analysis</h1>
+  <hr>
+</div>
+
+<div class="content-section">
+  <div class="info-row">
+    <div class="info-label">Tools Used :</div>
+    <div class="info-values">
+      <button class="info-button">Excel</button>
+      <button class="info-button">Power BI</button>
+    </div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-label">Relevant Link :</div>
+    <div class="info-values">
+      <a href="https://github.com/rimshasiddiqui68/Customer-Churn-Analysis" target="_blank" class="link-button">Detailed Repository ➔</a>
+    </div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-label">Project Type :</div>
+    <div class="info-values">
+      <button class="info-button">Data Cleaning</button>
+      <button class="info-button">Exploratory Data Analysis</button>
+      <button class="info-button">Data Visualisation</button>
+    </div>
+  </div>
+</div>
+
+<div class="content-section">
+  <h2>Project Background</h2>
+  <p>In the fast-paced telecom industry, retaining customers has become just as important as acquiring them. With plenty of service providers and easy switching options, companies risk losing valuable customers if they don’t actively manage churn. To tackle this, I explored a dataset of 6,418 telecom users in India to understand why customers leave and what can be done to keep them. The focus was on patterns across demographics, service usage, billing behavior, contracts, and regional trends.</p>
+  <p>
+    I used SQL for data cleaning and analysis, followed by Power BI to design an interactive dashboard. The goal was to surface actionable insights—such as which customers are most likely to churn and why—and offer strategic recommendations to reduce churn rates. 
+    This project is a step toward helping telecom companies build smarter, more customer-centric retention strategies using real data.
+  </p>
+
+  <h2>Executive Summary</h2>
+  <p>
+    This project investigates customer churn within the Indian telecom sector using a dataset of 6,418 customers. Through SQL-based data transformation and Power BI dashboards, 
+    the analysis reveals that nearly 27% of customers have churned, with senior citizens, month-to-month subscribers, and fiber optic users being the most at risk. 
+    Short tenure periods (especially under 6 months), fewer referrals, and higher monthly charges also emerged as strong churn indicators.
+  </p>
+  <p>
+    Key findings show that states like Jammu & Kashmir and Assam experience the highest churn, while long-term contracts and bundled service offerings correlate with greater retention. 
+    In response, targeted strategies were recommended, such as improving fiber optic service quality, creating flexible contract options, and enhancing support for elderly users. 
+    These insights aim to help telecom providers strengthen customer loyalty and reduce churn through data-driven decisions.
+  </p>
+
+
+  
+    <h2>Key Insights & Findings</h2>
+  
+    <h3>Customer Metrics</h3>
+    <ul>
+      <li>Total Customers: 6,418</li>
+      <li>Active vs Churned: 4,275 stayed, 1,732 churned</li>
+      <li>New Joiners: 411</li>
+      <li>Churn Rate: ~27%</li>
+    </ul>
+  
+    <h3>Customer Demographics & Behavioral Trends</h3>
+    <ul>
+      <li>Female customers churn more often than males.</li>
+      <li>Senior citizens are more likely to churn than younger users.</li>
+      <li>Average tenure before churn is around 18 months; 26.37% churned within 6 months.</li>
+      <li>Two-year contracts have a low churn rate (~3%), while month-to-month plans see ~47% churn.</li>
+      <li>Customers with fewer than 4 referrals are more likely to churn.</li>
+    </ul>
+  
+    <h3>Impact of Service Types</h3>
+    <ul>
+      <li>Internet services influence churn more than phone services.</li>
+      <li>Older users often subscribe to both internet and phone services.</li>
+      <li>Fiber Optic users have a higher churn rate than DSL users.</li>
+      <li>~1,400 customers use multiple lines; ~2,200 use a single line.</li>
+    </ul>
+  
+    <h3>Payment Behavior Observations</h3>
+    <ul>
+      <li>Customers using bank withdrawals or credit cards are more consistent.</li>
+      <li>Those paying by mailed checks tend to churn more.</li>
+      <li>33.28% churn rate for users paying ₹80–₹100/month—many are Fiber Optic users.</li>
+      <li>Customers paying less than ₹20/month are more stable.</li>
+    </ul>
+  
+    <h3>Geographic Trends</h3>
+    <ul>
+      <li>High churn states: Jammu & Kashmir (57%), Assam, Jharkhand.</li>
+      <li>Low churn states: Gujarat, Madhya Pradesh, Uttarakhand.</li>
+    </ul>
+  
+    <h3>Reasons for Churn</h3>
+    <ul>
+      <li>More attractive offers and devices from competitors.</li>
+      <li>Lack of awareness about promotions.</li>
+      <li>Dissatisfaction with customer support service.</li>
+    </ul>
+  </div>
+  
+
+<div class="media-section">
+  <img src="images\portfolio\Customer Churn Page 1.png" alt="Customer Churn Dashboard">
+  <img src="images\portfolio\Customer Churn Page 2.png" alt="Churn Breakdown Visualization">
+  <img src="images\portfolio\Customer Churn Page 3.png" alt="Churn Breakdown Visualization">
+</div>
+
+
+<div class="content-section">
+   <h2>Conclusion</h2>
+  <p>
+    This analysis shows that many telecom customers are leaving, especially older people, people on monthly plans, and those using fiber optic internet. Most of the people who left did so within the first 6 months, which means they were not happy early on.
+  </p>
+  <p>
+    We also found that customers who stayed longer, had two-year contracts, or paid through bank or card were more loyal. Places like Jammu & Kashmir and Assam had the highest number of customers leaving, while other states like Gujarat and Madhya Pradesh were more stable.
+  </p>
+  <p>
+    The main reasons people left were better offers or devices from other companies and poor customer support.
+  </p>
+</div>
+
+<div class="content-section">
+    <h2>Recommendations</h2>
+    <ul>
+      <li><strong>Revamp Promotional Offers:</strong> Update promotional strategies to better highlight offers and reach customers. Increased awareness of competitive deals will help retain those considering switching providers.</li>
+  
+      <li><strong>Enhance Customer Support:</strong> Provide additional training for customer support staff to improve service quality and customer satisfaction, reducing churn due to negative interactions.</li>
+  
+      <li><strong>Improve Fiber Optic Service:</strong> Address the higher churn rate among Fiber Optic users by improving service reliability and considering more competitive pricing to match customer expectations.</li>
+  
+      <li><strong>Offer Flexible Contract Options:</strong> Introduce more flexible contract plans, such as 3-month or 6-month options, along with discounts for long-term contracts to encourage customer retention.</li>
+  
+      <li><strong>Retain At-Risk Customers:</strong> Even among our loyal customers, around 65% are at high risk of churning. To keep these customers engaged and satisfied, consider introducing measures like exclusive discounts on monthly bills, a points-based loyalty program, or personalized incentives based on their usage patterns.</li>
+  
+      <li><strong>Tailor Solutions for Senior Citizens:</strong> Introduce "family bundles" and a dedicated support team to help senior citizens navigate telecom services, improving their experience and reducing churn in this demographic.</li>
+    </ul>
+    <p>With the right insights and actions, keeping customers isn’t just possible—it’s inevitable. This project is just the beginning of smarter, stronger telecom retention.</p>
+
+  </div>
+
+  
+  
+
+<div class="contact-section">
+  <h2>GET IN TOUCH</h2>
+  <hr>
+  <p>Let's chat! Your data, my brain – together we can be unstoppable.</p>
+
+  <div class="contact-info">
+    <div>
+      <i class="fa-solid fa-house"></i>
+      <span>India (Open for Relocation)</span>
+    </div>
+    <div>
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:rimshasiddique68@gmail.com">rimshasiddique68@gmail.com</a>
+    </div>
+    <div>
+      <i class="fa-brands fa-github"></i>
+      <a href="https://github.com/rimshasiddiqui68" target="_blank">github.com/rimshasiddiqui68</a>
+    </div>
+    <div>
+      <i class="fa-brands fa-linkedin"></i>
+      <a href="https://linkedin.com/in/rimsha-siddiqui-501618268/" target="_blank">linkedin.com/in/rimsha-siddiqui-501618268/</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
